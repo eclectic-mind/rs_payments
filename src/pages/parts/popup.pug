@@ -1,0 +1,15 @@
+.shadow.invisible
+  .modal
+    a(href="/").close-popup
+
+    .popup-content
+
+      h4 Введите логин и пароль<br>для входа в Личный кабинет
+
+      form(action="#", name="form", method="POST", novalidate).authorization
+        input(placeholder="Логин", type="text", name="login", required)#login
+        input(placeholder="Пароль", type="text", name="password", required)#password
+        input(type="submit", value="Войти")#auth-submit.btn
+      
+      a(href="/") Напомнить пароль
+      a(href="/") Регистрация

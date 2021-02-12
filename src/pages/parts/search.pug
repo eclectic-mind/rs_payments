@@ -1,0 +1,9 @@
+section.search
+  .wrapper-narrow
+    h2 Поиск начислений
+
+    form(action="#", name="form", method="POST", novalidate).searching-form
+      input(placeholder="Введите данные для поиска", type="text", name="params", required)#params
+      input(type="submit", value="Найти")#search-submit.btn
+
+    p Чем больше параметров введено, тем полнее результаты поиска

@@ -1,0 +1,18 @@
+doctype html
+html
+  include ./parts/head.pug
+
+  body
+    include ./parts/menu.pug
+
+    .container
+      include ./parts/header.pug
+
+      main.main
+        include ./parts/payments.pug
+        include ./parts/partners.pug
+
+      include ./parts/footer.pug   
+      include ./parts/popup.pug
+
+script(type="text/javascript", src="scripts/bundle.js")

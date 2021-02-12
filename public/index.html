@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>This Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <aside class="menu hidden">
+        <article class="chapter">
+            <h4>Личный кабинет</h4><a class="auth-link" href="/">Вход в Личный кабинет</a>
+        </article>
+        <article class="chapter">
+            <h4>Как это работает</h4><a href="/">Условия использования сервиса</a><a href="/">Способы оплаты</a><a href="/">Часто задаваемые вопросы</a><a href="/">Служба поддержки</a>
+        </article>
+    </aside>
+    <div class="container">
+        <header class="header">
+            <div class="top-header">
+                <div class="wrapper-wide">
+                    <div class="hint invisible">
+                        <p>Тел. поддержки<br><big>8 800 123-45-67</big></p><a class="support" href="/">Написать письмо</a>
+                    </div><a class="sandwitch" href="#menu"><span class="top"></span><span class="mid"></span><span class="bot"></span></a><a class="logo" href="/"></a><a class="ask desktop-only" href="/" id="show-hint"></a>
+                </div>
+            </div>
+            <section class="search">
+                <div class="wrapper-narrow">
+                    <h2>Поиск начислений</h2>
+                    <form class="searching-form" action="#" name="form" method="POST" novalidate><input placeholder="Введите данные для поиска" type="text" name="params" required id="params"><input class="btn" type="submit" value="Найти" id="search-submit"></form>
+                    <p>Чем больше параметров введено, тем полнее результаты поиска</p>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="payments">
+                <h2 class="wide-only">Здесь можно оплатить</h2>
+                <h2 class="narrow-only">Узнайте, как оплатить</h2>
+                <nav class="payments-nav"><a href="#gibdd">Штрафы ГИБДД</a><a href="#sudeb">Судебные задолженности</a><a href="#nalog">Налоги</a><a href="#rosre">Услуги Росреестра</a>и другие услуги</nav>
+                <div class="dropdown mob-only" id="gibdd-subtitle"> <a href="#">Штрафы ГИБДД</a></div>
+                <div class="payments-type mob-invisible" id="gibdd">
+                    <div class="wrapper-narrow">
+                        <div class="column-text">
+                            <h3>Штрафы ГИБДД</h3>
+                            <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа. </p>
+                            <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+                            <h4>Платить вовремя — дешевле! </h4>
+                            <p>В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете. </p>
+                        </div>
+                        <div class="column-illustr"> </div>
+                    </div>
+                </div>
+                <div class="dropdown mob-only" id="sudeb-subtitle"><a href="#">Судебные задолженности</a></div>
+                <div class="payments-type mob-invisible" id="sudeb">
+                    <div class="wrapper-narrow">
+                        <div class="column-illustr"></div>
+                        <div class="column-text">
+                            <h3>Судебные задолженности</h3>
+                            <p>Для поиска начислений в ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства. </p>
+                            <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.м</p>
+                            <h4>Удобно! </h4>
+                            <p>Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown mob-only" id="nalog-subtitle"><a href="#">Налоги</a></div>
+                <div class="payments-type mob-invisible" id="nalog">
+                    <div class="wrapper-narrow">
+                        <div class="column-text">
+                            <h3>Налоги</h3>
+                            <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового документа, если у вас на руках есть квитанция.</p>
+                            <h4>Важно!</h4>
+                            <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только платежи физических лиц.</p>
+                        </div>
+                        <div class="column-illustr"></div>
+                    </div>
+                </div>
+                <div class="dropdown mob-only" id="rosre-subtitle"><a href="#">Услуги Росреестра</a></div>
+                <div class="payments-type mob-invisible" id="rosre">
+                    <div class="wrapper-narrow">
+                        <div class="column-illustr"></div>
+                        <div class="column-text">
+                            <h3>Услуги Росреестра</h3>
+                            <p>В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                            <h4>Нет кода?</h4>
+                            <p>Если у вас ещё нет кода платежа, перейдите на сайт <a href="http://rosreestr.ru" target="_blank">rosreestr.ru</a> и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners wrapper-narrow">
+                <h2>С нами работают</h2>
+                <ul class="partners-list">
+                    <li><img src="assets/img/partner1.png"><span>Партнёр 1</span></li>
+                    <li><img src="assets/img/partner2.png"><span>Компания-партнер с длинным названием</span></li>
+                    <li><img src="assets/img/partner3.png"><span>Партнёр 3</span></li>
+                    <li><img src="assets/img/partner4.png"><span>Название партнёра 4</span></li>
+                    <li><img src="assets/img/partner5.png"><span>Компания-партнёра 5</span></li>
+                    <li><img src="assets/img/partner6.png"><span>Партнёр 6<br>с длинным названием</span></li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrapper-wide">
+                <div class="copyrights">© 2012 — 2020 ООО «Название Компании»</div><a class="secure" href="/"></a>
+            </div>
+        </footer>
+        <div class="shadow invisible">
+            <div class="modal"><a class="close-popup" href="/"></a>
+                <div class="popup-content">
+                    <h4>Введите логин и пароль<br>для входа в Личный кабинет</h4>
+                    <form class="authorization" action="#" name="form" method="POST" novalidate><input placeholder="Логин" type="text" name="login" required id="login"><input placeholder="Пароль" type="text" name="password" required id="password"><input class="btn" type="submit" value="Войти" id="auth-submit"></form><a href="/">Напомнить пароль</a><a href="/">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="scripts/bundle.js"></script>
